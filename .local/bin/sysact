@@ -1,0 +1,10 @@
+#!/bin/sh
+
+case "$(printf "🔒 lock\n🐻 hibernate\n💤 sleep\n🔃 reboot\n🖥️shutdow" | dmenu -i -p 'Action: ')" in
+	'🔒 lock') slock ;;
+	'🐻 hibernate') slock loginctl hibernate ;;
+	'💤 sleep') slock loginctl suspend ;;
+	'🔃 reboot') loginctl reboot ;;
+	'🖥️shutdown') poweroff ;;
+	*) exit 1 ;;
+esac
