@@ -1,0 +1,12 @@
+#!/bin/sh
+
+setbg &
+xcompmgr &
+xrdb $HOME/.config/x11/xresources &
+dunst &
+pipewire &
+pipewire-pulse &
+mpd &
+xset r rate 300 50 &
+unclutter &
+nvidia-settings --assign CurrentMetaMode="nvidia-auto-select +0+0 { ForceFullCompositionPipeline = On }" &

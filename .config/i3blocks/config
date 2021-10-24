@@ -1,0 +1,43 @@
+# i3blocks config file
+#
+# Please see man i3blocks for a complete reference!
+# The man page is also hosted at http://vivien.github.io/i3blocks
+#
+# List of valid properties:
+#
+# align
+# color
+# command
+# full_text
+# instance
+# interval
+# label
+# min_width
+# name
+# separator
+# separator_block_width
+# short_text
+# signal
+# urgent
+
+# Global properties
+separator_block_width=9
+color=#3DF2FF
+
+[mpc-info]
+command=mpc status | head -1
+interval=1
+align=center
+
+[disk-root]
+instance=/
+command=df -h / | awk 'NR==2 {print $3"/"$4" ("$5")"}'
+interval=30
+
+[memory]
+command=/usr/lib/i3blocks/memory
+interval=20
+
+[time]
+command=date '+%Y-%m-%d %H:%M'
+interval=5
