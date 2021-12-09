@@ -167,7 +167,7 @@ bindsym $mod+Shift+Return exec st_float
 #bindsym $mod+Shift+z
 #bindsym $mod+x
 #bindsym $mod+Shift+x
-bindsym $mod+c exec dmenupass
+bindsym $mod+c exec passmenu
 bindsym $mod+Shift+c reload
 #bindsym $mod+v
 #bindsym $mod+Shift+v
