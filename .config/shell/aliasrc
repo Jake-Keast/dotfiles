@@ -48,4 +48,5 @@ alias \
 	magit="nvim -c MagitOnly" \
 	ref="shortcuts >/dev/null; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/zshnameddirrc" \
 	weath="less -S ${XDG_DATA_HOME:-$HOME/.local/share}/weatherreport" \
-	dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+	dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME' \
+	playmusic="cd $HOME && m && mpc random on && mpc add */ && mpc play"

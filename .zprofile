@@ -6,6 +6,7 @@ export PATH="$PATH:$HOME/.local/bin"
 unsetopt PROMPT_SP
 
 # Defaults
+export KDEWIN="i3"
 export EDITOR="nvim"
 export TERMINAL="st"
 export BROWSER="firefox"
